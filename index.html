@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<!-- Author: Peterson Alves - https://github.com/FalkenFull
+Source: http://devgeeks.org" email="tommy@devgeeks.org">
+        Tommy-Carlos Williams 
+-->
+
+  <head>
+  <title>Simple HTML5 Mobile Music Player</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+	<meta charset="utf-8">
+	<style type="text/css">
+	
+		#playcontrols {
+			text-align: center;
+			margin-top: 50px;
+		}
+		#playcontrols #activityindicator, #playcontrols #stopbutton {
+			display: none;
+		}
+		
+		#textpositiondiv {
+			margin-top: 100px;
+		}
+	
+	</style>
+	<script type="text/javascript" charset="utf-8" src="scripts/html5audio.js"></script>
+  </head>
+  <body>
+	  <h2 style="text-align:center;font-family:sans-serif;font-weight:bold;background-color:#434343;color:white;">Simple HTML5 Mobile Music Player</h2></body></html>
+  	  <div id="playcontrols" >
+		  <a href="#" id="playbutton" onClick="html5audio.play();return false;"><img src="images/playbutton.png" /></a>
+		  <a href="#" id="activityindicator" onClick="html5audio.stop();return false;"><img src="images/activityindicator.gif" alt="Smiley face" height="128" width="128" /></a>
+		  <a href="#" id="stopbutton" onClick="html5audio.stop();return false;"><img src="images/stopbutton.png" /></a>
+	  </div>
+	  <div id="textpositiondiv" style=" font-family:verdana;text-align:center;font-weight:bold;background-color:#434343;color:white;" >Time Played: <span id="textposition">Stoped</span></div>
+	  <script type="text/javascript">
+		  playButton = document.getElementById('playbutton');
+		  stopButton = document.getElementById('stopbutton');
+		  activityIndicator = document.getElementById('activityindicator');
+		  textPosition = document.getElementById('textposition');
+	  </script>
+  </body>
+</html>
